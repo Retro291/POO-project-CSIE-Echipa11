@@ -1,0 +1,101 @@
+# clase pentru datele aplicatiei
+Client:
+  campuri:
+    cnp: string
+    nume: string
+    adresa: string
+    telefon: string
+
+  metode:
+    - salveazaInFisierBinar
+    - citesteDinFisierBinar
+
+IFisierBinar: (interfata)
+  metode:
+    - scrie in fisierul binar
+    - citeste din fisierul binar
+  
+Produs: public IFisierBinar: (se salveaza pe disc in format binar)
+  campuri:
+    id: number
+    denumire: string
+    descriere: string
+    pret: string
+    stoc: string
+
+  metode:
+    - afiseaza in consola
+    - citeste din consola
+    - scrie in binar
+    - citeste din binar
+
+  operatori:
+    == Produs
+
+ProdusComandat: public Produs:
+  campuri:
+    cantitate: number
+
+  operatori:
+    == ProdusComandat
+
+Comanda: public IFisierBinar: (se salveaza pe disc in format binar)
+  campuri:
+    id: number
+    produse: vector<ProdusComandat>
+
+  operatori:
+    += ProdusComandat
+    -= ProdusComandat
+    == Comanda
+
+# clasa care gestioneaza datele aplicatiei
+# structura datelor pe disc:
+#     database:
+#       produse: (un produs / fisier, numele fisierului e id-ul produsului)
+#         1.bin
+#         2.bin
+#         3.bin
+#         ...
+#       comenzi: (o comanda / fisier, numele fisierului e id-ul comenzii)
+#         1.bin
+#         2.bin
+#         ...
+DataBase:
+  metode:
+    - incarca produse
+    - salveaza produse
+
+    - incarca comenzi
+    - salveaza comenzi
+    - adauga comanda
+
+    - salveaza produs
+    - sterge produs
+
+# clase pentru meniuri
+IMeniu:
+  metode:
+    - loop
+    - afiseaza meniu (virtuala)
+
+MeniuMagazin: public IMeniu:
+  metode:
+    - listeaza produse
+    - listeaza comenzi
+
+    - adauga produse in baza de date
+    - sterge produse din baza de date
+    - modifica produse din baza de date
+
+    - listeaza comenzi
+    - sterge comenzi
+    - realizeaza raport cu comenzile (txt)
+
+MeniuClient: public IMeniu:
+  metode:
+    - listeaza produsele
+    - adauga produse la comanda
+    - sterge produse din comanda
+    - vizualizeaza comanda
+    - trimite comanda (nume, adresa etc)

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="meniu">
+      <UniqueIdentifier>{584a4805-7c52-4d94-b3d8-0c551cfbe4f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="date">
+      <UniqueIdentifier>{acb22188-23ba-44a0-893d-1baa85638a41}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Proiect POO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="date\Client.cpp">
+      <Filter>date</Filter>
+    </ClCompile>
+    <ClCompile Include="date\Comanda.cpp">
+      <Filter>date</Filter>
+    </ClCompile>
+    <ClCompile Include="date\DataBase.cpp">
+      <Filter>date</Filter>
+    </ClCompile>
+    <ClCompile Include="date\Produs.cpp">
+      <Filter>date</Filter>
+    </ClCompile>
+    <ClCompile Include="date\ProdusComandat.cpp">
+      <Filter>date</Filter>
+    </ClCompile>
+    <ClCompile Include="meniu\IMeniu.cpp">
+      <Filter>meniu</Filter>
+    </ClCompile>
+    <ClCompile Include="meniu\MeniuClient.cpp">
+      <Filter>meniu</Filter>
+    </ClCompile>
+    <ClCompile Include="meniu\MeniuMagazin.cpp">
+      <Filter>meniu</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="date\Client.h">
+      <Filter>date</Filter>
+    </ClInclude>
+    <ClInclude Include="date\Comanda.h">
+      <Filter>date</Filter>
+    </ClInclude>
+    <ClInclude Include="date\DataBase.h">
+      <Filter>date</Filter>
+    </ClInclude>
+    <ClInclude Include="date\IFisierBinar.h">
+      <Filter>date</Filter>
+    </ClInclude>
+    <ClInclude Include="date\Produs.h">
+      <Filter>date</Filter>
+    </ClInclude>
+    <ClInclude Include="date\ProdusComandat.h">
+      <Filter>date</Filter>
+    </ClInclude>
+    <ClInclude Include="meniu\IMeniu.h">
+      <Filter>meniu</Filter>
+    </ClInclude>
+    <ClInclude Include="meniu\MeniuClient.h">
+      <Filter>meniu</Filter>
+    </ClInclude>
+    <ClInclude Include="meniu\MeniuMagazin.h">
+      <Filter>meniu</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
